@@ -1,0 +1,53 @@
+/* Reset básico e definição de fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilo da mensagem principal */
+  .message {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .message h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* Estilo do carrossel */
+  .carousel {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Cada imagem ocupará 100% do container */
+  .carousel-container img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  /* Responsividade para mobile */
+  @media (max-width: 600px) {
+    .message h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
